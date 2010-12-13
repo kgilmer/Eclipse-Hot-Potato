@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.decorators">
+      <decorator
+            adaptable="true"
+            class="org.hotpotato.HotPotatoLabelDecorator"
+            icon=""
+            id="org.hotpotato.decorator"
+            label="Hot Potato Decorator"
+            lightweight="true"
+            location="BOTTOM_RIGHT"
+            state="true">
+         <enablement>
+            <objectClass
+                  name="org.eclipse.core.resources.IFile">
+            </objectClass>
+         </enablement>
+      </decorator>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.hotpotato.preferences.HotPotatoPreferencePage"
+            id="org.hotpotato.preferences.HotPotatoPreferencePage"
+            name="Hot Potato">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.hotpotato.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>
