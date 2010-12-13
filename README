@@ -1,0 +1,4 @@
+Hot Potato is a simple plugin for Eclipse that decorates file resources in the package explorer view based on time.  
+
+There are three levels of "hotness" that can be adjusted in a preference page.  I created this plugin because often my workflow involves multiple successive edits to the same sets of files, but I'd have be scanning through the Package Explorer view looking for something.  This plugin essentially highlights files I've recently edited.
+
